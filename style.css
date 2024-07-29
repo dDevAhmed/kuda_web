@@ -176,23 +176,84 @@ div.cookie-policy {
 }
 
 nav {
-    /* align-self: stretch; */
-    box-shadow: 0 4px 13px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 .25rem .8125rem rgba(0, 0, 0, 0.05);
     background-color: var(--primary-white);
     display: flex;
-    /* flex-direction: row; */
+    justify-content: space-between;
     align-items: center;
-    /* justify-content: flex-start; */
-    padding: .75rem;
-    /* box-sizing: border-box; */
+    padding: .625rem 3.75rem;
     z-index: 99;
     position: sticky;
     top: 0;
     max-width: 100%;
-    /* text-align: left; */
     font-size: .85rem;
     color: var(--color-midnightblue);
     font-family: var(--font-inter);
+
+    div.left-side {
+        display: flex;
+        align-items: center;
+        gap: 6.25rem;
+
+        a {
+            img.nav-logo {
+                height: 1.25rem;
+            }
+        }
+
+        span.nav-links {
+            display: flex;
+            align-items: center;
+            gap: 3.125rem;
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+
+    div.right-side {
+        display: flex;
+        align-items: center;
+        gap: 1.875rem;
+
+        a {
+            text-decoration: none;
+            color: var(--color-midnightblue);
+        }
+
+        a:nth-child(1) {
+            font-weight: 600;
+        }
+
+        a:nth-child(2) {
+            color: var(--color-white);
+            padding: 0.912rem 1.937rem 0.962rem;
+            background-color: var(--color-midnightblue);
+            border-radius: var(--br-3xs);
+            font-weight: 600;
+
+            &:hover {
+                transition: transform .6s;
+                transform: translateY(-.3125rem);
+            }
+        }
+
+        a:nth-child(3) {
+            padding: .5rem;
+            background: var(--color-lavender-100);
+            border-radius: var(--br-81xl);
+
+            img{
+                border-radius: var(--br-8xs);
+            }
+        }
+
+        a:nth-child(4) {
+            text-decoration: none;
+            font-size: 1.25rem;
+        }
+    }
 }
 
 /* 8K Screens (6145px and up) */
@@ -240,6 +301,22 @@ nav {
 @media screen and (max-width: 992px) {
     html {
         font-size: 16px;
+    }
+
+    div.cookie-policy {}
+
+    nav{
+        padding: .625rem 1.875rem;
+        div.left-side {
+            span.nav-links {
+                display: none;
+            } 
+        }
+        div.right-side{
+            a:nth-child(1), a:nth-child(2){
+                display: none;
+            }
+        }
     }
 }
 
