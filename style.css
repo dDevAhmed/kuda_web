@@ -40,6 +40,7 @@
     /* Colors */
     --color-white: #fff;
     --color-lavender-100: #dfe3ff;
+    --color-lavender-100-light: #eff1ff;
     --color-darkgray: #979797;
     --color-black: #000;
     --color-midnightblue: #40196d;
@@ -244,7 +245,7 @@ nav {
             background: var(--color-lavender-100);
             border-radius: var(--br-81xl);
 
-            img{
+            img {
                 border-radius: var(--br-8xs);
             }
         }
@@ -252,6 +253,59 @@ nav {
         a:nth-child(4) {
             text-decoration: none;
             font-size: 1.25rem;
+            display: none;
+        }
+    }
+}
+
+/* main content */
+
+/* main content */
+
+div.get-app {
+    display: none;
+    
+    div.wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.25rem;
+        background: var(--color-lavender-100-light);
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+
+        span.left {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+
+            img {
+                height: 3.75rem;
+                border-radius: var(--br-3xs);
+                width: auto;
+            }
+
+            span.rating {
+                p {
+                    color: var(--color-midnightblue);
+                    font-weight: 800;
+                }
+
+                span.stars {
+                    margin-top: .3125rem;
+                    color: #FFC83E;
+                }
+            }
+        }
+
+        a.get-app {
+            text-decoration: none;
+            background: var(--color-midnightblue);
+            color: var(--color-white);
+            font-weight: 700;
+            padding: .9375rem;
+            border-radius: var(--br-3xs);
         }
     }
 }
@@ -305,16 +359,24 @@ nav {
 
     div.cookie-policy {}
 
-    nav{
+    nav {
         padding: .625rem 1.875rem;
+
         div.left-side {
             span.nav-links {
                 display: none;
-            } 
+            }
         }
-        div.right-side{
-            a:nth-child(1), a:nth-child(2){
+
+        div.right-side {
+
+            a:nth-child(1),
+            a:nth-child(2) {
                 display: none;
+            }
+
+            a:nth-child(4) {
+                display: block;
             }
         }
     }
@@ -329,6 +391,14 @@ nav {
         position: fixed;
         /* top: 0; */
         width: 100%;
+    }
+
+    /* main content */
+
+    /* main content */
+
+    div.get-app {
+        display: block;
     }
 }
 
