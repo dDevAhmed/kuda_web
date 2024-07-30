@@ -504,10 +504,18 @@ main {
         padding: 3.125rem 0;
         overflow: hidden;
 
+        h3 {
+            font-weight: 900;
+            color: var(--color-midnightblue);
+            font-size: 2rem;
+            text-align: center;
+        }
+
         div.container {
             display: flex;
             align-items: center;
             gap: 1.25rem;
+            margin-top: 3.125rem;
 
             div.testimonial-container {
                 display: flex;
@@ -538,6 +546,24 @@ main {
             }
         }
     }
+
+    section.companies {
+        padding: 1.25rem 3.125rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a {
+            text-decoration: none;
+            filter: grayscale(100%);
+
+            &:hover{
+                filter: grayscale(0%);
+
+            }
+        }
+    }
+
     /* main content */
 }
 
