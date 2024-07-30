@@ -407,6 +407,42 @@ main {
         }
     }
 
+    section.your-phone-plus {
+        div.left-side {
+            h3 {
+                font-weight: 900;
+                color: var(--color-midnightblue);
+                font-size: 2rem;
+            }
+
+            p {
+                margin-top: 1.25rem;
+                font-size: 1rem;
+                font-weight: 300;
+                width: 70%;
+            }
+
+           a {
+                margin-top: 1.25rem;
+                color: var(--color-midnightblue);
+                display: flex;
+                align-items: center;
+                gap: .3125rem;
+                font-size: .875rem;
+                font-weight: 700;
+                text-decoration: none;
+                span{
+                    text-decoration: underline;
+                }
+            }
+        }
+        div.right-side{
+            img{
+                width: 100%;
+            }
+        }
+    }
+
     /* main content */
 }
 
@@ -556,6 +592,22 @@ div.get-app {
                 }
             }
         }
+
+        section.your-phone-plus {
+            flex-direction: column;
+            div.left-side{
+                text-align: center;
+                p{
+                    width: 50%;
+                    margin: 1.25rem auto 0;
+                }
+                a{
+                    margin: 1.25rem auto 0;
+                    width: fit-content;
+                    text-align: center;
+                }
+            }
+        }
     }
 }
 
@@ -574,12 +626,13 @@ div.get-app {
     /* main content */
     main {
         section.section {
-            padding: 6.25rem 2.5rem;
+            padding: 0 2.5rem 6.25rem ;
         }
 
         section.the-money-app {
             flex-direction: column;
             gap: 1.875rem;
+            padding-top: 6.25rem;
 
             div.left-side {
 
@@ -601,6 +654,22 @@ div.get-app {
             div.top,
             div.bottom {
                 flex-direction: column;
+            }
+        }
+
+        section.your-phone-plus {
+            flex-direction: column;
+            div.left-side{
+                text-align: center;
+                p{
+                    width: 100%;
+                    margin: 1.25rem auto 0;
+                }
+                a{
+                    margin: 1.25rem auto 0;
+                    width: fit-content;
+                    text-align: center;
+                }
             }
         }
     }
