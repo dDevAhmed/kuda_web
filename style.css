@@ -268,6 +268,37 @@ main {
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        div.left-side,
+        div.right-side {
+            h3 {
+                font-weight: 900;
+                color: var(--color-midnightblue);
+                font-size: 2rem;
+            }
+
+            p {
+                margin-top: 1.25rem;
+                font-size: 1rem;
+                font-weight: 300;
+                width: 70%;
+            }
+
+            a {
+                margin-top: 1.25rem;
+                color: var(--color-midnightblue);
+                display: flex;
+                align-items: center;
+                gap: .3125rem;
+                font-size: .875rem;
+                font-weight: 700;
+                text-decoration: none;
+
+                span {
+                    text-decoration: underline;
+                }
+            }
+        }
     }
 
     section.the-money-app {
@@ -362,7 +393,7 @@ main {
                     transform: translate(-50%, -50%);
 
                     img {
-                        height: 180%;
+                        height: 150%;
                         position: absolute;
                         top: 50%;
                         left: 50%;
@@ -408,40 +439,16 @@ main {
     }
 
     section.your-phone-plus {
-        div.left-side {
-            h3 {
-                font-weight: 900;
-                color: var(--color-midnightblue);
-                font-size: 2rem;
-            }
+        div.left-side {}
 
-            p {
-                margin-top: 1.25rem;
-                font-size: 1rem;
-                font-weight: 300;
-                width: 70%;
-            }
-
-           a {
-                margin-top: 1.25rem;
-                color: var(--color-midnightblue);
-                display: flex;
-                align-items: center;
-                gap: .3125rem;
-                font-size: .875rem;
-                font-weight: 700;
-                text-decoration: none;
-                span{
-                    text-decoration: underline;
-                }
-            }
-        }
-        div.right-side{
-            img{
+        div.right-side {
+            img {
                 width: 100%;
             }
         }
     }
+
+    section.its-your-money {}
 
     /* main content */
 }
@@ -570,6 +577,30 @@ div.get-app {
             padding: 3.125rem 1.25rem;
         }
 
+        section.two-side-section {
+
+            div.left-side,
+            div.right-side {
+                text-align: center;
+
+                h3 {
+                    width: 50%;
+                    margin: 0 auto;
+                }
+
+                p {
+                    width: 50%;
+                    margin: 1.25rem auto 0;
+                }
+
+                a {
+                    margin: 1.25rem auto 0;
+                    width: fit-content;
+                    text-align: center;
+                }
+            }
+        }
+
         section.the-money-app {
 
             /* gap: 1.875rem; */
@@ -586,7 +617,7 @@ div.get-app {
 
                     div.small-circle {
                         img {
-                            height: 150%;
+                            height: 100%;
                         }
                     }
                 }
@@ -595,18 +626,14 @@ div.get-app {
 
         section.your-phone-plus {
             flex-direction: column;
-            div.left-side{
+
+            div.left-side {
                 text-align: center;
-                p{
-                    width: 50%;
-                    margin: 1.25rem auto 0;
-                }
-                a{
-                    margin: 1.25rem auto 0;
-                    width: fit-content;
-                    text-align: center;
-                }
             }
+        }
+
+        section.its-your-money {
+            flex-direction: column-reverse;
         }
     }
 }
@@ -626,7 +653,27 @@ div.get-app {
     /* main content */
     main {
         section.section {
-            padding: 0 2.5rem 6.25rem ;
+            padding: 0 2.5rem 6.25rem;
+        }
+
+        section.two-side-section:not(section.the-money-app) {
+
+            div.left-side,
+            div.right-side {
+                
+                text-align: center;
+                h3,
+                p
+                 {
+                    width: 100%;
+                }
+                a{
+                    width: fit-content;
+                }
+                img{
+                    width: 100%;
+                }
+            }
         }
 
         section.the-money-app {
@@ -659,18 +706,21 @@ div.get-app {
 
         section.your-phone-plus {
             flex-direction: column;
-            div.left-side{
+
+            /* div.left-side {
                 text-align: center;
-                p{
+
+                p {
                     width: 100%;
                     margin: 1.25rem auto 0;
                 }
-                a{
+
+                a {
                     margin: 1.25rem auto 0;
                     width: fit-content;
                     text-align: center;
                 }
-            }
+            } */
         }
     }
 
