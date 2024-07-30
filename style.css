@@ -464,6 +464,8 @@ main {
 
     section.we-are-always-happy{}
 
+    section.fees-as-clear{}
+
     /* main content */
 }
 
@@ -671,6 +673,10 @@ div.get-app {
 
         section.we-are-always-happy{
             flex-direction: column;
+        }
+
+        section.fees-as-clear{
+            flex-direction: column-reverse;
         }
     }
 }
