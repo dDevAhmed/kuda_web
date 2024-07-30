@@ -552,12 +552,13 @@ main {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        gap: 1.25rem;
 
         a {
             text-decoration: none;
             filter: grayscale(100%);
 
-            &:hover{
+            &:hover {
                 filter: grayscale(0%);
 
             }
@@ -786,6 +787,17 @@ div.get-app {
         section.fees-as-clear {
             flex-direction: column-reverse;
         }
+
+        section.companies {
+            padding: 1.25rem 5rem;
+            justify-content: center;
+            a{
+                img{
+                    width: 70%;
+                }
+                /* padding: 1.875rem; */
+            }
+        }
     }
 }
 
@@ -807,7 +819,7 @@ div.get-app {
             padding: 0 2.5rem 6.25rem;
         }
 
-        section.two-side-section:not(section.the-money-app) {
+        section.two-side-section {
 
             div.left-side,
             div.right-side {
@@ -859,21 +871,17 @@ div.get-app {
 
         section.your-phone-plus {
             flex-direction: column;
+        }
 
-            /* div.left-side {
-                text-align: center;
+        section.testimonial{
+            h3{
+                padding: 0 1.25rem;
+            }
+        }
 
-                p {
-                    width: 100%;
-                    margin: 1.25rem auto 0;
-                }
-
-                a {
-                    margin: 1.25rem auto 0;
-                    width: fit-content;
-                    text-align: center;
-                }
-            } */
+        section.companies {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
         }
     }
 
