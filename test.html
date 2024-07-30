@@ -5,25 +5,104 @@
     <title>Circle</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        .circle {
-            width: 500px;
-            height: 500px;
-            background-color: blue;
+        section.testimonial {
+            padding: 3.125rem 0;
+            overflow: hidden;
+            /* Hide overflow to ensure smooth scrolling */
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+        }
+
+        .carousel {
+            display: flex;
+            animation: scroll 50s linear infinite;
+            /* Animation for continuous scrolling */
+        }
+
+        .card {
+            box-shadow: 0 0 25px rgba(0, 0, 0, .06);
+            background: var(--color-white);
+            padding: 1.875rem;
+            font-size: .875rem;
+            flex: 0 0 auto;
+            /* Prevent cards from shrinking */
+            margin-right: 1.25rem;
+            /* Space between cards */
+            width: 30%;
+        }
+
+        span {
+            display: flex;
+            align-items: center;
+            gap: .625rem;
+            margin-top: 3.125rem;
+        }
+
+        img {
+            height: 3.125rem;
+            width: auto;
             border-radius: 50%;
         }
 
-        @media (max-width: 768px) {
-            .circle {
-                width: 80%;
-                height: auto;
-                aspect-ratio: 1 / 1;
+        /* Keyframes for continuous scrolling */
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-100%);
             }
         }
     </style>
 </head>
 
 <body>
-    <div class="circle"></div>
+    <section class="testimonial">
+        <div class="container">
+            <div class="carousel">
+                <div class="card">
+                    <p>Testimonial 1</p>
+                    <span>
+                        <img src="avatar1.jpg" alt="Avatar 1">
+                        <span>Person 1</span>
+                    </span>
+                </div>
+                <div class="card">
+                    <p>Testimonial 2</p>
+                    <span>
+                        <img src="avatar2.jpg" alt="Avatar 2">
+                        <span>Person 2</span>
+                    </span>
+                </div>
+                <div class="card">
+                    <p>Testimonial 3</p>
+                    <span>
+                        <img src="avatar3.jpg" alt="Avatar 3">
+                        <span>Person 3</span>
+                    </span>
+                </div>
+                <!-- Add more cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const carousel = document.querySelector('.carousel');
+            const cards = carousel.children;
+            const cardCount = cards.length;
+
+            for (let i = 0; i < cardCount; i++) {
+                const clone = cards[i].cloneNode(true);
+                carousel.appendChild(clone);
+            }
+        });
+    </script>
 </body>
 
 </html>
