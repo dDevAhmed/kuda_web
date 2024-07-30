@@ -462,6 +462,8 @@ main {
 
     section.turn-off-access{}
 
+    section.we-are-always-happy{}
+
     /* main content */
 }
 
@@ -665,6 +667,10 @@ div.get-app {
 
         section.turn-off-access{
             flex-direction: column-reverse;
+        }
+
+        section.we-are-always-happy{
+            flex-direction: column;
         }
     }
 }
