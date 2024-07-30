@@ -8,45 +8,44 @@
         section.testimonial {
             padding: 3.125rem 0;
             overflow: hidden;
-            /* Hide overflow to ensure smooth scrolling */
+
+            div.container {
+                display: flex;
+                align-items: center;
+                gap: 1.25rem;
+
+                div.testimonial-container {
+                    display: flex;
+                    animation: scroll 50s linear infinite;
+
+                    div.card {
+                        box-shadow: 0 0 25px rgba(0, 0, 0, .06);
+                        background: var(--color-white);
+                        padding: 1.875rem;
+                        font-size: .875rem;
+                        flex: 0 0 auto;
+                        margin-right: 1.25rem;
+                        width: 30%;
+
+                        span {
+                            display: flex;
+                            align-items: center;
+                            gap: .625rem;
+                            margin-top: 3.125rem;
+
+                            img {
+                                height: 3.125rem;
+                                width: auto;
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+                }
+            }
         }
 
-        .container {
-            display: flex;
-            align-items: center;
-            gap: 1.25rem;
-        }
 
-        .carousel {
-            display: flex;
-            animation: scroll 50s linear infinite;
-            /* Animation for continuous scrolling */
-        }
 
-        .card {
-            box-shadow: 0 0 25px rgba(0, 0, 0, .06);
-            background: var(--color-white);
-            padding: 1.875rem;
-            font-size: .875rem;
-            flex: 0 0 auto;
-            /* Prevent cards from shrinking */
-            margin-right: 1.25rem;
-            /* Space between cards */
-            width: 30%;
-        }
-
-        span {
-            display: flex;
-            align-items: center;
-            gap: .625rem;
-            margin-top: 3.125rem;
-        }
-
-        img {
-            height: 3.125rem;
-            width: auto;
-            border-radius: 50%;
-        }
 
         /* Keyframes for continuous scrolling */
         @keyframes scroll {
@@ -64,42 +63,72 @@
 <body>
     <section class="testimonial">
         <div class="container">
-            <div class="carousel">
+            <div class="testimonial-container">
                 <div class="card">
-                    <p>Testimonial 1</p>
+                    <p>Just joined the best Digital Bank in Nigeria. I have no complaints whatsoever since i started
+                        using Kuda</p>
                     <span>
-                        <img src="avatar1.jpg" alt="Avatar 1">
-                        <span>Person 1</span>
+                        <img src="https://i.pravatar.cc/400?img=69" alt="User Image">
+                        <p>Tomisinv</p>
                     </span>
                 </div>
                 <div class="card">
-                    <p>Testimonial 2</p>
+                    <p>Never thought an app would stylish become my everyday way to bank and have access to physical
+                        cash.
+                        @kudabank is sleek</p>
                     <span>
-                        <img src="avatar2.jpg" alt="Avatar 2">
-                        <span>Person 2</span>
+                        <img src="https://i.pravatar.cc/400?img=70" alt="User Image">
+                        <p>Babajide Duroshola</p>
                     </span>
                 </div>
                 <div class="card">
-                    <p>Testimonial 3</p>
+                    <p>This is the best banking app! I’m enjoying seamless banking plus the free transfers to other
+                        banks is a thing of joy. This is what I call freedom. I’ve made kuda my main bank account and
+                        I’m gonna refer all my friends!</p>
                     <span>
-                        <img src="avatar3.jpg" alt="Avatar 3">
-                        <span>Person 3</span>
+                        <img src="https://i.pravatar.cc/400?img=52" alt="User Image">
+                        <p>@RealSOK_</p>
                     </span>
                 </div>
-                <!-- Add more cards as needed -->
+                <div class="card">
+                    <p>like the fact that kuda Microfinance Bank doesn’t only run a no fee policy and 25 free transfers
+                        in a month but you can only create a budget plan to control your spending pattern. Really really
+                        nice!!</p>
+                    <span>
+                        <img src="https://i.pravatar.cc/400?img=51" alt="User Image">
+                        <p>Adebambo Oyekan</p>
+                    </span>
+                </div>
+                <div class="card">
+                    <p>I highly recommend this app, it does what it says "The bank of the free". I have received my kuda
+                        card.</p>
+                    <span>
+                        <img src="https://i.pravatar.cc/400?img=64" alt="User Image">
+                        <p>Ifeanyichukwu Obaji</p>
+                    </span>
+                </div>
+                <div class="card">
+                    <p>Well done to the guys at @kudabank had a dispensing error on Friday night and reached out to them
+                        on Sunday... 48 working hours after and my money is back in my account... Special shout out to
+                        Maxwell and Norah</p>
+                    <span>
+                        <img src="https://i.pravatar.cc/400?img=59" alt="User Image">
+                        <p>Mu'azu Muhammad Kudu</p>
+                    </span>
+                </div>
             </div>
         </div>
     </section>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const carousel = document.querySelector('.carousel');
-            const cards = carousel.children;
+            const testimonialContainer = document.querySelector('.testimonial-container');
+            const cards = testimonialContainer.children;
             const cardCount = cards.length;
 
             for (let i = 0; i < cardCount; i++) {
                 const clone = cards[i].cloneNode(true);
-                carousel.appendChild(clone);
+                testimonial - container.appendChild(clone);
             }
         });
     </script>
