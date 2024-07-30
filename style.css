@@ -316,6 +316,7 @@ main {
         gap: 3.125rem;
 
         div.left-side {
+            width: 50%;
 
             h1 {
                 font-weight: 900;
@@ -373,12 +374,15 @@ main {
         }
 
         div.right-side {
+            width: 50%;
+
             div.circle-container {
                 width: 100%;
 
                 div.circle {
                     border-radius: 50%;
                     border: .0625rem solid var(--color-lavender-100-light);
+                    aspect-ratio: 1 / 1;
                 }
 
                 div.large-circle {
@@ -455,6 +459,8 @@ main {
     section.its-your-money {}
 
     section.save-money {}
+
+    section.turn-off-access{}
 
     /* main content */
 }
@@ -609,9 +615,12 @@ div.get-app {
         }
 
         section.the-money-app {
+            display: flex;
+            gap: 1.875rem;
 
-            /* gap: 1.875rem; */
             div.left-side {
+                width: 100%;
+
                 p {
                     width: 100%;
                 }
@@ -619,8 +628,15 @@ div.get-app {
 
             div.right-side {
                 div.circle-container {
-                    /* width: 80%; */
-                    margin: 0 auto;
+                    
+                    div.large-circle {
+                        width: 90%;
+                        height: 90%;
+                        margin: 3.125rem auto;
+                        /* aspect-ratio: 1 / 1; */
+                    }
+
+                    div.medium-circle {}
 
                     div.small-circle {
                         img {
@@ -645,6 +661,10 @@ div.get-app {
 
         section.save-money {
             flex-direction: column;
+        }
+
+        section.turn-off-access{
+            flex-direction: column-reverse;
         }
     }
 }
