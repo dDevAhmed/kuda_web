@@ -261,17 +261,20 @@ main {
 
     /* main content */
     section.section {
-        padding: 3.125rem 7.5rem;
+        
     }
-
+    
     section.two-side-section {
+        padding: 3.125rem 7.5rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
 
     section.the-money-app {
+        gap: 3.125rem;
         div.left-side {
+            /* width: 50%; */
 
             h1 {
                 font-weight: 900;
@@ -328,10 +331,12 @@ main {
         }
 
         div.right-side {
+            /* width: 50%; */
             div.circle-container {
+                width: 100%;
                 div.circle {
                     border-radius: 50%;
-                    border: .0625rem solid var(--color-lavender-100);
+                    border: .0625rem solid var(--color-lavender-100-light);
                 }
 
                 div.large-circle {
@@ -504,6 +509,17 @@ div.get-app {
             div.left-side {
                 p {
                     width: 100%;
+                }
+            }
+            div.right-side {
+                div.circle-container {
+                    /* width: 80%; */
+                    margin: 0 auto;
+                    div.small-circle {
+                        img{
+                            height: 150%;
+                        }
+                    }
                 }
             }
         }
