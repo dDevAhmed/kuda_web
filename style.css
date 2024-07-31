@@ -792,27 +792,76 @@ footer {
                 color: var(--color-midnightblue);
                 font-weight: 800;
             }
-            a{
+
+            a {
                 text-decoration: none;
                 color: var(--color-black);
             }
         }
     }
-    div.second-part{
+
+    div.second-part {
         margin-top: 3.125rem;
-        div.store-container{
+
+        div.store-container {
             display: flex;
             align-items: center;
             gap: .625rem;
-            img{
+
+            img {
                 width: 100%;
             }
         }
-        p{
+
+        p {
             margin-top: 1.25rem;
             text-align: center;
             font-size: .875rem;
             color: var(--color-darkgray);
+        }
+    }
+
+    div.third-part {
+        margin-top: 3.125rem;
+        display: flex;
+        justify-content: space-between;
+        gap: 1.875rem;
+
+        div.col {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+
+            p,
+            a {
+                font-size: .875rem;
+            }
+
+            p.header,
+            a {
+                color: var(--color-midnightblue);
+                font-weight: 800;
+            }
+        }
+
+        div.col:first-child {
+            div.social {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 1.25rem;
+
+                a {
+                    text-decoration: none;
+
+                    i {
+                        border: .0625rem solid var(--color-gainsboro);
+                        padding: .3125rem;
+                        border-radius: 50%;
+                        background: var(--color-lavender-100);
+                    }
+                }
+            }
         }
     }
 }
@@ -1079,7 +1128,7 @@ div.get-app {
         }
     }
 
-    footer{
+    footer {
         padding: 3.125rem 1.25rem;
     }
 }
@@ -1211,21 +1260,31 @@ div.get-app {
             }
         }
     }
+
     /* main content */
 
-    footer{
+    footer {
         div.first-part {
             position: relative;
             top: 4.375rem;
             flex-wrap: wrap;
-            img.footer-logo{
+
+            img.footer-logo {
                 position: absolute;
                 top: -4.375rem
             }
         }
 
-        div.second-part{
-            margin-top: 6.25rem;
+        div.second-part {
+            margin-top: 9.375rem;
+        }
+
+        div.third-part {
+            flex-wrap: wrap;
+
+            p:nth-child(2) {
+                width: 50%;
+            }
         }
     }
 
