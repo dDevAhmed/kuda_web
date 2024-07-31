@@ -797,6 +797,23 @@ footer {
             }
         }
     }
+    div.second-part{
+        margin-top: 3.125rem;
+        div.store-container{
+            display: flex;
+            align-items: center;
+            gap: .625rem;
+            img{
+                width: 100%;
+            }
+        }
+        p{
+            margin-top: 1.25rem;
+            text-align: center;
+            font-size: .875rem;
+            color: var(--color-darkgray);
+        }
+    }
 }
 
 div.get-app {
@@ -1197,7 +1214,17 @@ div.get-app {
 
     footer{
         div.first-part {
+            position: relative;
+            top: 4.375rem;
             flex-wrap: wrap;
+            img.footer-logo{
+                position: absolute;
+                top: -4.375rem
+            }
+        }
+
+        div.second-part{
+            margin-top: 6.25rem;
         }
     }
 
