@@ -557,7 +557,7 @@ main {
     }
 
     section.companies {
-        padding: 1.25rem 3.125rem;
+        padding: 3.125rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -575,17 +575,94 @@ main {
     }
 
     section.our-partners {
+        padding: 3.125rem 9.375rem;
+        background: var(--color-gray-100);
+
         div.container {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-top: 5rem;
+            margin-top: 3.125rem;
             gap: 1.25rem;
 
             img {
                 &:hover {
                     cursor: pointer;
                     filter: grayscale(100%);
+                }
+            }
+        }
+    }
+
+    section.choose-the-freedom {
+        table {
+            margin-top: 3.125rem;
+            width: 100%;
+            box-shadow: 0 0 25px rgba(0, 0, 0, .06);
+            border-collapse: collapse;
+            border: .0625rem solid var(--color-gainsboro);
+
+            thead {
+                text-align: left;
+                tr {
+                    border-bottom: .0625rem solid var(--color-gainsboro);
+
+                    th {
+                        padding: 1.25rem 3.75rem;
+                        color: var(--color-midnightblue);
+                        font-weight: 800;
+
+                        img {
+                            height: 1.25rem;
+                            width: auto;
+                        }
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    td {
+                        padding: .625rem 3.75rem;
+                        font-size: .875rem;
+                    }
+
+                    td:first-child {
+                        font-weight: 700;
+                    }
+
+                    td:nth-child(2) {
+                        display: flex;
+                        align-items: center;
+                        gap: .625rem;
+
+                        i {
+                            background: var(--color-gainsboro);
+                            padding: .3125rem;
+                            border-radius: 50%;
+                            font-size: .625rem;
+                        }
+                    }
+
+                    td:last-child {
+                        i{
+                            margin-right: .625rem;
+                            background: var(--color-lavender-100);
+                            padding: .3125rem;
+                            border-radius: 50%;
+                            font-size: .625rem;
+                        }
+                    }
+                }
+
+                tr:not(:last-child) {
+                    border-bottom: .0625rem solid var(--color-gainsboro);
+                }
+
+                tr:last-child {
+                    td {
+                        padding-bottom: 1.875rem;
+                    }
                 }
             }
         }
