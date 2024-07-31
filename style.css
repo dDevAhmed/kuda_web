@@ -151,6 +151,7 @@ div.cookie-policy {
     transform: translateX(-50%);
     width: auto;
     color: #000;
+    z-index: 10;
 
     a {
         color: var(--color-midnightblue);
@@ -538,6 +539,9 @@ main {
                     flex: 0 0 auto;
                     margin-right: 1.25rem;
                     width: 30%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
 
                     span {
                         display: flex;
@@ -757,6 +761,42 @@ main {
     }
 
     /* main content */
+}
+
+footer {
+    border: .0625rem solid var(--color-gainsboro);
+    padding: 3.125rem 7.5rem;
+
+    div.first-part {
+        display: flex;
+        justify-content: space-between;
+        gap: 1.875rem;
+
+        img.footer-logo {
+            height: 1.25rem;
+            width: auto;
+        }
+
+        div.col {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+
+            p,
+            a {
+                font-size: .875rem;
+            }
+
+            p.header {
+                color: var(--color-midnightblue);
+                font-weight: 800;
+            }
+            a{
+                text-decoration: none;
+                color: var(--color-black);
+            }
+        }
+    }
 }
 
 div.get-app {
@@ -1020,6 +1060,10 @@ div.get-app {
             }
         }
     }
+
+    footer{
+        padding: 3.125rem 1.25rem;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -1031,6 +1075,7 @@ div.get-app {
         /* fixme - at the top */
         position: fixed;
         top: 0;
+        height: 6.25rem;
         width: 100%;
     }
 
@@ -1130,12 +1175,14 @@ div.get-app {
                 flex-direction: column;
             }
         }
+
         section.join-kuda {
             div.left-side {
-                a.join-kuda{
+                a.join-kuda {
                     display: none;
                 }
-                div.store-container{
+
+                div.store-container {
                     display: flex !important;
                     gap: .625rem;
                 }
@@ -1146,8 +1193,13 @@ div.get-app {
             }
         }
     }
-
     /* main content */
+
+    footer{
+        div.first-part {
+            flex-wrap: wrap;
+        }
+    }
 
     div.get-app {
         display: block;
