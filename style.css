@@ -604,6 +604,7 @@ main {
 
             thead {
                 text-align: left;
+
                 tr {
                     border-bottom: .0625rem solid var(--color-gainsboro);
 
@@ -645,7 +646,7 @@ main {
                     }
 
                     td:last-child {
-                        i{
+                        i {
                             margin-right: .625rem;
                             background: var(--color-lavender-100);
                             padding: .3125rem;
@@ -662,6 +663,52 @@ main {
                 tr:last-child {
                     td {
                         padding-bottom: 1.875rem;
+                    }
+                }
+            }
+        }
+    }
+
+    section.more-for-you {
+        div.container {
+            margin-top: 3.125rem;
+            display: flex;
+            justify-content: space-between;
+            gap: 1.25rem;
+
+            div.card {
+                box-shadow: 0 0 25px rgba(0, 0, 0, .06);
+                background: var(--color-white);
+                padding: 1.875rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1.25rem;
+
+                i.top-icon {
+                    margin-right: .625rem;
+                    background: var(--color-lavender-100);
+                    padding: 7px;
+                    border-radius: 50%;
+                    font-size: 14px;
+                    width: fit-content;
+                }
+
+                h4 {
+                    font-weight: 900;
+                    color: var(--color-midnightblue);
+                    font-size: 1.375rem;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: var(--color-midnightblue);
+                    font-weight: 600;
+                    display: flex;
+                    align-items: center;
+                    gap: .3125rem;
+
+                    span {
+                        text-decoration: underline;
                     }
                 }
             }
@@ -911,6 +958,18 @@ div.get-app {
                 img {
                     /* width: 70%; */
                 }
+            }
+        }
+
+        section.choose-the-freedom {
+            table{
+                /* width: 100%; */
+            }
+        }
+
+        section.more-for-you {
+            div.container {
+                flex-direction: column;
             }
         }
     }
