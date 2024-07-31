@@ -715,6 +715,47 @@ main {
         }
     }
 
+    section.join-kuda {
+
+        div.container {
+            border: .0625rem solid var(--color-gainsboro);
+            box-shadow: 0 0 25px rgba(0, 0, 0, .06);
+            border-radius: .3125rem;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            background: var(--color-lavender-100-light);
+            padding: 3.125rem;
+
+            div.left-side {
+                a.join-kuda {
+                    color: var(--color-white);
+                    padding: 0.912rem 3.125rem 0.962rem;
+                    background-color: var(--color-midnightblue);
+                    border-radius: var(--br-3xs);
+                    font-weight: 600;
+                    width: fit-content;
+
+                    &:hover {
+                        transition: transform .6s;
+                        transform: translateY(-.3125rem);
+                    }
+                }
+
+                div.store-container {
+                    display: none;
+                }
+            }
+
+            div.right-side {
+                img {
+                    height: 70%;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+
     /* main content */
 }
 
@@ -962,14 +1003,20 @@ div.get-app {
         }
 
         section.choose-the-freedom {
-            table{
+            table {
                 /* width: 100%; */
             }
         }
 
-        section.more-for-you {
-            div.container {
-                flex-direction: column;
+        section.join-kuda {
+            div.left-side {
+                h3 {
+                    width: 50%;
+                }
+            }
+
+            div.right-side {
+                display: none;
             }
         }
     }
@@ -1046,6 +1093,11 @@ div.get-app {
             div.top,
             div.bottom {
                 flex-direction: column;
+
+                div.card {
+                    flex-direction: row;
+                    align-items: center;
+                }
             }
         }
 
@@ -1070,6 +1122,27 @@ div.get-app {
                 img {
                     width: 80%;
                 }
+            }
+        }
+
+        section.more-for-you {
+            div.container {
+                flex-direction: column;
+            }
+        }
+        section.join-kuda {
+            div.left-side {
+                a.join-kuda{
+                    display: none;
+                }
+                div.store-container{
+                    display: flex !important;
+                    gap: .625rem;
+                }
+            }
+
+            div.right-side {
+                display: none;
             }
         }
     }
