@@ -864,6 +864,16 @@ footer {
             }
         }
     }
+
+    div.forth-part {
+        margin-top: 3.125rem;
+
+        p {
+            margin-top: 1.25rem;
+            font-size: .875rem;
+            color: var(--color-darkgray);
+        }
+    }
 }
 
 div.get-app {
