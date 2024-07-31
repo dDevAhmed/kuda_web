@@ -392,7 +392,8 @@ main {
 
                 div.circle {
                     border-radius: 50%;
-                    border: .0625rem solid var(--color-lavender-100-light);
+                    /* fixme - change to lavendar-light */
+                    border: .0625rem solid var(--color-lavender-100);
                     aspect-ratio: 1 / 1;
                 }
 
@@ -429,6 +430,35 @@ main {
                     }
                 }
 
+                i {
+                    color: var(--color-midnightblue);
+                    background: var(--color-lavender-100);
+                    padding: .625rem;
+                    border-radius: 50%;
+                    font-size: .875rem;
+                    position: absolute;
+                }
+
+                i.fa-sitemap {
+                    top: 1.875rem;
+                    right: 5rem;
+                }
+                i.fa-credit-card{
+                    top: 1.875rem;
+                    left: 5rem;
+                }
+                i.fa-paper-plane-top{
+                    bottom: -1.25rem;
+                    left: 50%;
+                }
+                i.fa-circle-three-quarters{
+                    top: 3rem;
+                    left: 15rem;
+                }
+                i.fa-piggy-bank{
+                    bottom: 3rem;
+                    left: 15rem;
+                }
             }
         }
     }
@@ -1163,12 +1193,13 @@ div.get-app {
     main {
         /* position: relative;
         top: 4.375rem; */
-        
-        nav{
+
+        nav {
             position: fixed;
             top: 3.875rem;
             width: 100%;
         }
+
         section {
             h3.section-title {
                 padding: 0 1.25rem;
@@ -1307,7 +1338,8 @@ div.get-app {
                 width: 50%;
             }
         }
-        div.forth-part{
+
+        div.forth-part {
             padding-bottom: 6.25rem;
         }
     }
