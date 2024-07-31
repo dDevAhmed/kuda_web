@@ -1,0 +1,6 @@
+fixmes
+
+1. nav dropdown
+    dropdown overlay
+2. dismiss cookie - js
+3.

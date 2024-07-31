@@ -1036,6 +1036,7 @@ div.get-app {
         }
 
         section.the-money-app {
+            padding-top: 12.5rem;
             display: flex;
             gap: 1.875rem;
 
@@ -1149,15 +1150,25 @@ div.get-app {
     }
 
     div.cookie-policy {
-        /* fixme - at the top */
         position: fixed;
         top: 0;
-        height: 6.25rem;
+        height: fit-content;
         width: 100%;
+        border-radius: unset;
+        /* box-shadow: unset; */
+        border: unset;
     }
 
     /* main content */
     main {
+        /* position: relative;
+        top: 4.375rem; */
+        
+        nav{
+            position: fixed;
+            top: 3.875rem;
+            width: 100%;
+        }
         section {
             h3.section-title {
                 padding: 0 1.25rem;
@@ -1193,7 +1204,7 @@ div.get-app {
         section.the-money-app {
             flex-direction: column;
             gap: 1.875rem;
-            padding-top: 6.25rem;
+            padding-top: 12.5rem;
 
             div.left-side {
 
@@ -1295,6 +1306,9 @@ div.get-app {
             p:nth-child(2) {
                 width: 50%;
             }
+        }
+        div.forth-part{
+            padding-bottom: 6.25rem;
         }
     }
 
