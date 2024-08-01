@@ -1193,14 +1193,11 @@ div.get-app {
         height: fit-content;
         width: 100%;
         border-radius: unset;
-        /* box-shadow: unset; */
         border: unset;
     }
 
     /* main content */
     main {
-        /* position: relative;
-        top: 4.375rem; */
 
         nav {
             position: fixed;
@@ -1284,42 +1281,47 @@ div.get-app {
             flex-direction: column;
         }
 
-        section.testimonial {}
-
         section.companies {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
         }
 
         section.our-partners {
-            padding: 3.125rem;
+            padding-top: 3.125rem;
 
             div.container {
                 margin-top: unset;
+                position: relative;
 
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
                 gap: 6.25rem;
 
                 img {
-                    width: 33%;
+                    width: 100%;
                 }
+                /* img:last-child{
+                    position: absolute;
+                    width: 50%;
+                } */
             }
         }
 
         section.choose-the-freedom {
+            padding-top: 3.125rem;
+
             table {
                 width: 100%;
 
                 thead {
                     th {
                         /* padding: 0; */
-                        width: 30%;
+                        /* width: 30%; */
+                        padding: .625rem .3125rem;
                         word-wrap: break-word;
 
                         img {
-                            height: .625rem;
+                            /* height: .625rem; */
                         }
                     }
                 }
@@ -1327,8 +1329,8 @@ div.get-app {
                 tbody {
                     tr {
                         td {
-                            padding: .625rem .3125rem;
-                            width: 30%;
+                            /* padding: .625rem .3125rem; */
+                            /* width: 30%; */
                             word-wrap: break-word;
                         }
                     }
@@ -1369,7 +1371,6 @@ div.get-app {
         div.first-part {
             position: relative;
             top: 4.375rem;
-            /* flex-wrap: wrap; */
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             row-gap: 3.125rem;
