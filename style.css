@@ -388,24 +388,24 @@ main {
             width: 50%;
 
             div.circle-container {
-                width: 100%;
 
                 div.circle {
                     border-radius: 50%;
                     /* fixme - change to lavendar-light */
                     border: .0625rem solid var(--color-lavender-100);
-                    aspect-ratio: 1 / 1;
+                    /* aspect-ratio: 1 / 1; */
+                    margin: 0 auto;
                 }
 
                 div.large-circle {
-                    width: 31.25rem;
-                    height: 31.25rem;
+                    width: 25rem;
+                    height: 25rem;
                     position: relative;
                 }
 
                 div.medium-circle {
-                    width: 23.75rem;
-                    height: 23.75rem;
+                    width: 18.75rem;
+                    height: 18.75rem;
                     position: absolute;
                     top: 50%;
                     left: 50%;
@@ -413,8 +413,8 @@ main {
                 }
 
                 div.small-circle {
-                    width: 17.5rem;
-                    height: 17.5rem;
+                    width: 12.5rem;
+                    height: 12.5rem;
                     position: absolute;
                     top: 50%;
                     left: 50%;
@@ -440,24 +440,28 @@ main {
                 }
 
                 i.fa-sitemap {
-                    top: 1.875rem;
+                    top: .9375rem;
                     right: 5rem;
                 }
-                i.fa-credit-card{
-                    top: 1.875rem;
+
+                i.fa-credit-card {
+                    top: .9375rem;
                     left: 5rem;
                 }
-                i.fa-paper-plane-top{
+
+                i.fa-paper-plane-top {
                     bottom: -1.25rem;
                     left: 50%;
                 }
-                i.fa-circle-three-quarters{
-                    top: 3rem;
-                    left: 15rem;
+
+                i.fa-circle-three-quarters {
+                    top: 2.25rem;
+                    left: 11.25rem;
                 }
-                i.fa-piggy-bank{
-                    bottom: 3rem;
-                    left: 15rem;
+
+                i.fa-piggy-bank {
+                    bottom: 2.25rem;
+                    left: 11.25rem;
                 }
             }
         }
@@ -479,7 +483,6 @@ main {
                 display: flex;
                 flex-direction: column;
                 gap: 1.25rem;
-                flex: 1;
 
                 i {
                     background: var(--color-lavender-100);
@@ -1063,16 +1066,20 @@ div.get-app {
                     width: fit-content;
                     text-align: center;
                 }
+
+                img{
+                    width: 50%;
+                }
             }
         }
 
         section.the-money-app {
-            padding-top: 12.5rem;
+            padding-top: 9.375rem;
             display: flex;
             gap: 1.875rem;
 
             div.left-side {
-                width: 100%;
+                /* width: 100%; */
 
                 p {
                     width: 100%;
@@ -1083,8 +1090,8 @@ div.get-app {
                 div.circle-container {
 
                     div.large-circle {
-                        width: 90%;
-                        height: 90%;
+                        /* width: 90%; */
+                        /* height: 90%; */
                         margin: 3.125rem auto;
                         /* aspect-ratio: 1 / 1; */
                     }
@@ -1239,6 +1246,7 @@ div.get-app {
             padding-top: 12.5rem;
 
             div.left-side {
+                width: 100%;
 
                 h1,
                 p {
@@ -1251,6 +1259,11 @@ div.get-app {
                 }
             }
 
+            div.right-side {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
         }
 
         section.five-cards {
@@ -1278,6 +1291,7 @@ div.get-app {
         }
 
         section.our-partners {
+            padding: 3.125rem;
             div.container {
                 margin-top: unset;
 
@@ -1286,6 +1300,31 @@ div.get-app {
 
                 img {
                     width: 80%;
+                }
+            }
+        }
+
+        section.choose-the-freedom{
+            table{
+                width: 100%;
+                thead{
+                    th{
+                        /* padding: 0; */
+                        width: 30%;
+                        word-wrap: break-word;
+                        img{
+                            height: .625rem;
+                        }
+                    }
+                }
+                tbody{
+                    tr{
+                        td{
+                            padding: .625rem .3125rem;
+                            width: 30%;
+                            word-wrap: break-word;
+                        }
+                    }
                 }
             }
         }

@@ -4,4 +4,4 @@ fixmes
     dropdown overlay
 2. dismiss cookie - js
     if dismiss adjust top of main
-3.
+3. adjust images
