@@ -1100,7 +1100,7 @@ div.get-app {
 
                     div.small-circle {
                         img {
-                            height: 100%;
+                            height: 150%;
                         }
                     }
                 }
@@ -1291,8 +1291,6 @@ div.get-app {
 
             div.container {
                 margin-top: unset;
-                position: relative;
-
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 gap: 6.25rem;
@@ -1300,10 +1298,6 @@ div.get-app {
                 img {
                     width: 100%;
                 }
-                /* img:last-child{
-                    position: absolute;
-                    width: 50%;
-                } */
             }
         }
 
@@ -1314,23 +1308,19 @@ div.get-app {
                 width: 100%;
 
                 thead {
-                    th {
-                        /* padding: 0; */
-                        /* width: 30%; */
-                        padding: .625rem .3125rem;
-                        word-wrap: break-word;
+                    tr {
 
-                        img {
-                            /* height: .625rem; */
+                        th {
+                            padding: 1.25rem .625rem;
                         }
                     }
+
                 }
 
                 tbody {
                     tr {
                         td {
-                            /* padding: .625rem .3125rem; */
-                            /* width: 30%; */
+                            padding: .625rem;
                             word-wrap: break-word;
                         }
                     }
