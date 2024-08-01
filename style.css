@@ -1067,7 +1067,7 @@ div.get-app {
                     text-align: center;
                 }
 
-                img{
+                img {
                     width: 50%;
                 }
             }
@@ -1275,6 +1275,7 @@ div.get-app {
                 div.card {
                     flex-direction: row;
                     align-items: center;
+                    width: 100%;
                 }
             }
         }
@@ -1292,34 +1293,40 @@ div.get-app {
 
         section.our-partners {
             padding: 3.125rem;
+
             div.container {
                 margin-top: unset;
 
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 6.25rem;
 
                 img {
-                    width: 80%;
+                    width: 33%;
                 }
             }
         }
 
-        section.choose-the-freedom{
-            table{
+        section.choose-the-freedom {
+            table {
                 width: 100%;
-                thead{
-                    th{
+
+                thead {
+                    th {
                         /* padding: 0; */
                         width: 30%;
                         word-wrap: break-word;
-                        img{
+
+                        img {
                             height: .625rem;
                         }
                     }
                 }
-                tbody{
-                    tr{
-                        td{
+
+                tbody {
+                    tr {
+                        td {
                             padding: .625rem .3125rem;
                             width: 30%;
                             word-wrap: break-word;
@@ -1356,10 +1363,16 @@ div.get-app {
     /* main content */
 
     footer {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+
         div.first-part {
             position: relative;
             top: 4.375rem;
-            flex-wrap: wrap;
+            /* flex-wrap: wrap; */
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 3.125rem;
 
             img.footer-logo {
                 position: absolute;
