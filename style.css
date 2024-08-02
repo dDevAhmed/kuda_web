@@ -168,7 +168,7 @@ div.cookie-policy {
         font-weight: 700;
         font-size: .875rem;
         border-radius: var(--br-3xs);
-        height: 40px;
+        height: 2.5rem;
 
         &:hover {
             transition: transform .6s;
@@ -687,7 +687,7 @@ main {
             gap: 1.25rem;
 
             div.card {
-                box-shadow: 0 0 25px rgba(0, 0, 0, .06);
+                box-shadow: 0 0 1.5625rem rgba(0, 0, 0, .06);
                 background: var(--color-white);
                 padding: 1.875rem;
                 display: flex;
@@ -731,7 +731,7 @@ main {
                 animation: scroll 50s linear infinite;
 
                 div.card {
-                    box-shadow: 0 0 25px rgba(0, 0, 0, .06);
+                    box-shadow: 0 0 1.5625rem rgba(0, 0, 0, .06);
                     background: var(--color-white);
                     padding: 1.875rem;
                     font-size: .875rem;
@@ -801,7 +801,7 @@ main {
         table {
             margin-top: 3.125rem;
             width: 100%;
-            box-shadow: 0 0 25px rgba(0, 0, 0, .06);
+            box-shadow: 0 0 1.5625rem rgba(0, 0, 0, .06);
             border-collapse: collapse;
             border: .0625rem solid var(--color-gainsboro);
 
@@ -880,7 +880,7 @@ main {
             gap: 1.25rem;
 
             div.card {
-                box-shadow: 0 0 25px rgba(0, 0, 0, .06);
+                box-shadow: 0 0 1.5625rem rgba(0, 0, 0, .06);
                 background: var(--color-white);
                 padding: 1.875rem;
                 display: flex;
@@ -890,9 +890,9 @@ main {
                 i.top-icon {
                     margin-right: .625rem;
                     background: var(--color-lavender-100);
-                    padding: 7px;
+                    padding: .4375rem;
                     border-radius: 50%;
-                    font-size: 14px;
+                    font-size: .875rem;
                     width: fit-content;
                 }
 
@@ -922,7 +922,7 @@ main {
 
         div.container {
             border: .0625rem solid var(--color-gainsboro);
-            box-shadow: 0 0 25px rgba(0, 0, 0, .06);
+            box-shadow: 0 0 1.5625rem rgba(0, 0, 0, .06);
             border-radius: .3125rem;
             width: 100%;
             display: flex;

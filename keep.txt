@@ -7,8 +7,8 @@ fixmes
 3. adjust images
 
 ---large screen
-1. Nigerian flag
-2. app / play store logo
+1. 
+2. kuda sign in the web - store logo
 3. companies logo
 4. partners logo
-5. 
+5. cookie policy - dismiss adjustment
