@@ -19,6 +19,7 @@ dropdowns.forEach(dropdown => {
     let dropdownContent = dropdown.querySelector('.dropdown-content');
     dropdown.addEventListener('mouseenter', () => {
         dropdownContent.style.display = 'block';
+        dropdownContent.style.borderRadius = '.3125rem';
         navOverlay.style.display = 'block';
         nav.style.backgroundColor = 'rgba(64, 25, 109, 0)'; // Ensure it's transparent or use a color if needed
     });

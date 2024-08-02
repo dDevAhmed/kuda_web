@@ -30,7 +30,35 @@
                 </a>
                 <span class="nav-links">
                     <!-- fixme - dropdown links -->
-                    <a href="#">Personal <i class="fa-solid fa-caret-down"></i></a>
+                    <!-- <a href="#">Personal <i class="fa-solid fa-caret-down"></i></a> -->
+                    <div class="dropdown" id="company-dropdown">
+                        <a href="javascript:void(0)">Personal <i class="fa-solid fa-caret-down"></i></a>
+                        <div class="dropdown-content dropdown-content-personal" id="personal-dropdown-content">
+                            <div class="container">
+                                <div class="left-wing">
+                                    <a href="https://kuda.com/en-ng/"><i class="fa-solid fa-home"></i> Discover Personal</a>
+                                    <a href="https://kuda.com/en-ng/spend/"><i class="fa-solid fa-send"></i> Transfer & Spend</a>
+                                    <a href="https://kuda.com/en-ng/save/"><i class="fa-solid fas fa-piggy-bank"></i> Save</a>
+                                    <a href="https://kuda.com/en-ng/investments/"><i class="fa-solid fa-chart-simple"></i> Investments</a>
+                                    <a href="https://kuda.com/en-ng/cards/"><i class="fa-solid fa-credit-card"></i> Kuda Card</a>
+                                </div>
+                                <div class="right-wing">
+                                    <p>Payments</p>
+                                    <a href="https://kuda.com/bill-payments/electricity/"><i class="fa-solid fa-lightbulb-on"></i> Electricity</a>
+                                    <a href="https://kuda.com/en-ng/airtime/"><i class="fa-solid fa-mobile"></i> Airtime</a>
+                                    <a href="https://kuda.com/en-ng/bill-payments/internet/"><i class="fa-solid fa-wifi"></i> Internet</a>
+                                    <a href="https://kuda.com/en-ng/gift-cards/"><i class="fa-solid fa-gift-card"></i> Gift Cards</a>
+                                    <a href="https://kuda.com/en-ng/cardless-payments/"><i class="fa-solid fa-globe"></i> Cardless Payments</a>
+                                    <a href="https://kuda.com/en-ng/bill-payments/tv/"><i class="fa-solid fa-tv-retro"></i> TV</a>
+                                    <a href="https://kuda.com/en-ng/bill-payments/betting/"><i class="fa-solid fa-dice-six"></i> Betting</a>
+                                    <a href="https://kuda.com/en-ng/bill-payments/cowry/"><i class="fa-solid fa-car"></i> Transport</a>
+                                    <p>Credit</p>
+                                    <a href="https://kuda.com/en-ng/overdrafts/"><i class="fa-solid fa-life-ring"></i> Overdrafts</a>
+                                    <a href="https://kuda.com/en-ng/salary-loan/"><i class="fa-solid fa-money-bill"></i> Salary Loan</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <a href="#">Business <i class="fa-solid fa-caret-down"></i></a>
                     <div class="dropdown" id="company-dropdown">
                         <a href="javascript:void(0)">Company <i class="fa-solid fa-caret-down"></i></a>
@@ -583,22 +611,5 @@
     </div>
 
     <script src="script.js"></script>
-    <script>
-        // let nav = document.querySelector('nav');
-        // let navOverlay = document.getElementById('nav-overlay');
-        // let dropdownBtn = document.getElementById('company-dropdown');
-        // let dropdownContent = document.getElementById('company-dropdown-content');
-
-        // dropdownBtn.addEventListener('mouseenter', () => {
-        //     dropdownContent.style.display = 'block';
-        //     navOverlay.style.display = 'block';
-        //     nav.style.backgroundColor = 'rgba(64, 25, 109, 0)';
-        // });
-        // dropdownBtn.addEventListener('mouseleave', () => {
-        //     dropdownContent.style.display = 'none';
-        //     navOverlay.style.display = 'none';
-        //     nav.style.backgroundColor = '#fff';
-        // });
-    </script>
 
 </html>
