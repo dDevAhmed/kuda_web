@@ -5,3 +5,10 @@ fixmes
 2. dismiss cookie - js
     if dismiss adjust top of main
 3. adjust images
+
+---large screen
+1. Nigerian flag
+2. app / play store logo
+3. companies logo
+4. partners logo
+5. 

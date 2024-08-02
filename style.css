@@ -455,6 +455,7 @@ main {
 
                 img {
                     border-radius: var(--br-8xs);
+                    height: 1.25rem;
                 }
             }
 
@@ -559,6 +560,10 @@ main {
                     &:hover {
                         transition: transform .6s;
                         transform: translateY(-0.1875rem);
+                    }
+
+                    img{
+                        height: 2.5rem;
                     }
                 }
             }
@@ -1005,7 +1010,8 @@ footer {
             gap: .625rem;
 
             img {
-                width: 100%;
+                width: auto;
+                height: 1.875rem;
             }
         }
 
@@ -1074,8 +1080,9 @@ footer {
 
 div.get-app {
     display: none;
-
+    
     div.wrapper {
+        z-index: 10;
         display: flex;
         align-items: center;
         justify-content: space-between;
